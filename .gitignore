@@ -2,7 +2,8 @@ libs/
 CMakeCache.txt
 CMakeFiles/
 Makefile
-*.cmake
+/*.cmake
+/tests/*.cmake
 *.bin
 *.elf
 *.hex
