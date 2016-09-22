@@ -1,0 +1,4 @@
+name: hModules
+desc: 
+includes_path: "*/api/include"
+examples_path: "*/examples"
