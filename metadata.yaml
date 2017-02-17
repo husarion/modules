@@ -1,4 +1,0 @@
-name: modules
-desc: 
-includes_path: "*/api/include"
-examples_path: "*/examples"
