@@ -103,13 +103,13 @@ bool MPU9250::init()
 	sens.selectI2C();
 	sens.getI2C().setDataRate(100000);
 
-	// reset();
-	// setI2CMasterModeEnabled(true);
-	// resetI2CMaster();
-	// setDLPFMode(3);
-	// setRate(5 - 1);
+	reset();
+	setI2CMasterModeEnabled(true);
+	resetI2CMaster();
+	setDLPFMode(3);
+	setRate(5 - 1);
 
-	// E(initMagnetometer());
+	E(initMagnetometer());
 
 	return true;
 }
