@@ -38,9 +38,10 @@ extern void mpuDelayMs(int delayMs);
 extern void mpuDelayUs(int delayUs);
 
 #ifndef MPU9250_CLASSNAME
-#define MPU9250_CLASSNAME MPU9250
+#define MPU9250_CLASSNAME MPU9250Class
 #endif
 
+#define MPU9250_MULTIPLE_INSTANCES
 #ifdef MPU9250_MULTIPLE_INSTANCES
 extern uint8_t mpuReadCommand(uint8_t cmd, uint8_t* data, uint16_t len, void* userdata);
 extern uint8_t mpuSendCommand(uint8_t cmd, const uint8_t* data, uint16_t len, void* userdata);
