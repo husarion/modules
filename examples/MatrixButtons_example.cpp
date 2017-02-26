@@ -1,3 +1,7 @@
+@CATEGORY: MatrixButtons
+@NAME: basic
+@PORTS: stm32
+@BOARDS: core2,core2mini,robocore
 #include <cstddef>
 #include <cstdint>
 #include "hFramework.h"
