@@ -33,10 +33,8 @@ public:
 	ISensor* s;
 };
 
-void distSensCallback(void* p)
+void distSensCallback(DistanceSensorPimpl* impl)
 {
-	DistanceSensorPimpl* impl = ((DistanceSensorPimpl*)p);
-
 	uint32_t a = sys.getUsTimVal();
 	if (impl->s->getPin1().read() == 1)
 	{
@@ -61,7 +59,7 @@ void DistanceSensor::init()
 	if (impl->initialized)
 		return;
 
-	impl->s->getPin1().interruptOn(InterruptEdge::Both, distSensCallback, impl);
+	impl->s->getPin1().interruptOn(InterruptEdge::Both, std::bind(&distSensCallback, impl));
 	impl->s->getPin3().setOut();
 	impl->s->getPin3().write(0);
 	impl->initialized = true;
