@@ -12,7 +12,7 @@ void hMain()
 	sys.setLogDev(&Serial);
 
 	MPU9250 mpu(hSens1);
-
+	mpu.enableInterrupt();
 	mpu.init();
 
 	for (;;)
@@ -47,7 +47,7 @@ void hMain()
 	sys.setLogDev(&Serial);
 
 	MPU9250 mpu(hSens1.getBaseSens());
-
+	mpu.enableInterrupt();
 	mpu.init();
 
 	for (;;)
