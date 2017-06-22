@@ -5,7 +5,6 @@
 #include <cstddef>
 #include <cstdint>
 #include "hFramework.h"
-#include "hCloudClient.h"
 #include "MatrixButtons.h"
 #include <iostream>
 #include <cstdio>
@@ -62,15 +61,10 @@ a.addButon(3, 1, d2_printf);
 a.addButon(3, 2, d3_printf);
 a.addButon(3, 3, d4_printf);
 
-    Serial.init(115200);
-    sys.setSysLogDev(&devNull);
-    platform.begin(&RPi);
-    platform.ui.setProjectId("@@@PROJECT_ID@@@");
-
     for (;;)
     {
 	sys.delay(50);
 	LED1.toggle();
-    a.update();
+    	a.update();
     }
 }
