@@ -1,7 +1,6 @@
 #include <cstddef>
 #include <cstdint>
 #include "hFramework.h"
-#include "hCloudClient.h"
 #include <iostream>
 #include <cstdio>
 #include <vector>
