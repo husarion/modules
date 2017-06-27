@@ -39,7 +39,7 @@ public:
 	void setKPup(float Kp) { this->Kp_pos = Kp; }
 	void setKIup(float Ki) { this->Ki_pos = Ki; }
 	void setKDup(float Kd) { this->Kd_pos = Kd; }
-    void setKPdown(float Kp) { this->Kp_neg = Kp; }
+	void setKPdown(float Kp) { this->Kp_neg = Kp; }
 	void setKIdown(float Ki) { this->Ki_neg = Ki; }
 	void setKDdown(float Kd) { this->Kd_neg = Kd; }
 
@@ -47,7 +47,7 @@ public:
 	float getKPpos() const { return Kp_pos; }
 	float getKIpos() const { return Ki_pos; }
 	float getKDpos() const { return Kd_pos; }
-    float getKPneg() const { return Kp_neg; }
+	float getKPneg() const { return Kp_neg; }
 	float getKIneg() const { return Ki_neg; }
 	float getKDneg() const { return Kd_neg; }
 

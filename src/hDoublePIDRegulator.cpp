@@ -9,7 +9,8 @@
 #include <hUtils.h>
 #include <debug.h>
 
-namespace hFramework {
+namespace hFramework
+{
 hDoublePIDRegulator::hDoublePIDRegulator() : stableCounter(0)
 {
 }

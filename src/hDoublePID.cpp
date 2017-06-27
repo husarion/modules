@@ -62,13 +62,15 @@ float hDoublePID::update(float error, int dt_ms)
 
 	float tmpIsum = 0;
 	if (Ki_pos > 0.0f && Ki_neg > 0.0f && (flags & PID_FLAG_I_ENABLED))
-	{   
-        if(error>=0){
-		    isum += Ki_pos * error * dt_ms;
-        }
-        else{
-            isum += Ki_neg * error * dt_ms;
-        }
+	{
+		if (error >= 0)
+		{
+			isum += Ki_pos * error * dt_ms;
+		}
+		else
+		{
+			isum += Ki_neg * error * dt_ms;
+		}
 
 		if ((flags & PID_FLAG_HAS_IMAX) && isum > imax)
 			isum = imax;
@@ -78,13 +80,15 @@ float hDoublePID::update(float error, int dt_ms)
 		tmpIsum = isum;
 	}
 
-    float val;
-    if(error>=0){
-    	val = Kp_pos * error + tmpIsum + Kd_pos * curErr / dt_ms;
-    }
-    else{
-        val = Kp_neg * error + tmpIsum + Kd_neg * curErr / dt_ms;
-    }
+	float val;
+	if (error >= 0)
+	{
+		val = Kp_pos * error + tmpIsum + Kd_pos * curErr / dt_ms;
+	}
+	else
+	{
+		val = Kp_neg * error + tmpIsum + Kd_neg * curErr / dt_ms;
+	}
 	val *= scale;
 	// sys.log("%f %f %x\r\n", min, max, flags);
 	if ((flags & PID_FLAG_HAS_MAX) && val > max)

@@ -10,7 +10,8 @@
 #include "hRegulator.h"
 #include "hDoublePID.h"
 
-namespace hFramework {
+namespace hFramework
+{
 class hDoublePIDRegulator : public virtual hRegulator, public hDoublePID
 {
 private:
