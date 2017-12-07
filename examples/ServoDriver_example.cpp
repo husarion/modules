@@ -1,4 +1,4 @@
-@CATEGORY: MPU9250
+@CATEGORY: ServoDriver
 @NAME: basic
 @PORTS: stm32
 @BOARDS: core2,core2mini
