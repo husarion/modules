@@ -1,7 +1,3 @@
-@CATEGORY: MPU9250
-@NAME: basic
-@PORTS: stm32
-@BOARDS: core2,core2mini
 #include <hFramework.h>
 #include <MPU9250.h>
 

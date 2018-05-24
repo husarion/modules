@@ -1,8 +1,3 @@
-@CATEGORY: ServoDriver
-@NAME: basic
-@PORTS: stm32
-@BOARDS: core2,core2mini
-
 #include <hFramework.h>
 #include "ServoDriver.h"
 

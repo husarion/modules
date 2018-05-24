@@ -1,8 +1,3 @@
-@CATEGORY: hDoublePID
-@NAME: basic
-@PORTS: stm32
-@BOARDS: core2,core2mini
-
 #include "hFramework.h"
 #include "hDoublePIDRegulator.h"
 #include <stdio.h>
